@@ -13,6 +13,7 @@ public class Parrot {
      */
     import java.util.Scanner;
      public String copy(String text){
+        static Scanner sc = new Scanner(System.in)
         return "return text please!";
     }
 }
