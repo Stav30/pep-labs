@@ -56,6 +56,6 @@ public class Comparators {
      * @return true if a is not equal to b, false otherwise.
      */
     public boolean notEqualTo(int a, int b){
-        return (a != b));
+        return (a != b);
     }
 }
