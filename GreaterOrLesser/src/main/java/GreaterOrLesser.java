@@ -12,7 +12,7 @@ public class GreaterOrLesser {
     public String decide(int a, int b){
         if(a < b){
             return "Lesser" ;
-        } else if (a < b){
+        } else if (a > b){
             return "Greater";
         } else {
             return "Equal";
