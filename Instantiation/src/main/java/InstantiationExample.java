@@ -18,6 +18,7 @@ public class InstantiationExample {
      * @return any object.
      */
     public Object instantiateANewObject(){
-        return null;
+        Watch w1 = new Watch();
+        return w1;
     }
 }
