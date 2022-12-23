@@ -1,5 +1,3 @@
-
-
 public class ForLoop {
     /**
      *
@@ -43,7 +41,9 @@ public class ForLoop {
         String buildingString = "";
 
 //        code here
-
+        for(int i = start; i < end ; i++; ){
+            
+        }
         return buildingString;
     }
 }
