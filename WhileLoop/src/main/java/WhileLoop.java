@@ -39,8 +39,10 @@ public class WhileLoop {
 //        code here
         while(i < end ){
             System.out.println(i);
+            System.out.println(sum);
+            i+=1 ;
             return sum;
-            i++ ;
+            
         }
         
     }
