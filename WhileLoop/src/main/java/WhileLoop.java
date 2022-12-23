@@ -40,6 +40,7 @@ public class WhileLoop {
         while(i < end ){
             System.out.println(i);
             System.out.println(sum);
+            sum +=i ;
             i+=1 ;
             return sum;
             
