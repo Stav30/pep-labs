@@ -38,10 +38,11 @@ public class WhileLoop {
 
 //        code here
         while(i < end ){
+            sum = sum + i ;
             System.out.println(i);
             System.out.println(sum);
-            sum +=i ;
-            i+=1 ;         
+            i= i+1 ;    
+            
         }
-        return sum;
+        return sum; 
 }
