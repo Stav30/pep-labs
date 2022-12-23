@@ -14,13 +14,13 @@ public class HardcodedLogin {
      * @return true if there is a successful login, and false otherwise.
      */
     public boolean login(String username, String password){
-        if(username.equals ("admin"){
-            if(password.equals( "qwerty"){
+        if(username.equals("admin")){
+            if(password.equals( "qwerty")){
                 return true;
             }else return false;    
         }
-        else if(username.equals( "user"){
-            if(password.equals( "password"){
+        else if(username.equals( "user")){
+            if(password.equals( "password")){
                 return true;
             }else return false; 
         }
