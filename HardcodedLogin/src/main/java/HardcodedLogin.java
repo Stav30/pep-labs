@@ -17,11 +17,15 @@ public class HardcodedLogin {
         if(username == "admin"){
             if(password == "qwerty"){
                 return true;
-            }else return false;
-            
+            }else return false;    
         }
-        
+        else if(username == "user"){
+            if(password == "password"){
+                return true;
+            }else return false; 
+        }
     }
-        return false;
+        
+    return false;
     }
 }
