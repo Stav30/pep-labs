@@ -34,9 +34,7 @@ public class ReturnArrayContents {
             
            // return " ";
         str = str + nums[i]+ " ";
-        //str = Arrays.toString(nums);
-        //str.append(nums[i]+ " ");
-        //
+        
         }
         
         return str;
