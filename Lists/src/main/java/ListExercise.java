@@ -69,7 +69,8 @@ public class ListExercise {
      * @return the int at the location in 'list' represented by 'index'.
      */
     public int get(List<Integer> list, int index){
-        return 0;
+        return list.get(index);
+        //return 0;
     }
 
     /**
