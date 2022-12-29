@@ -30,7 +30,15 @@ public class ListExercise {
      * @return a List<Integer> object.
      */
     public List<Integer> createList(){
-        return null;
+        List<Integer> al=new ArrayList<Integer>();//creating arraylist 
+
+        //ArrayList list = new ArrayList();
+        //list = new ArrayList();
+        //List<Integer> list = new List<Integer>(); 
+            
+        //return arrayList;
+        return al;
+        //return null;
     }
 
     /**
