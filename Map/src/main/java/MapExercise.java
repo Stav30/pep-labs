@@ -73,6 +73,8 @@ public class MapExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void removeKeyValuePair(Map<Integer, String> map, int key){
+        map.remove(key);
+    
     }
 
     /**
@@ -83,6 +85,6 @@ public class MapExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void overwriteValue(Map<Integer, String> map, int key, String value){
-
+        map.put(key,value);
     }
 }
