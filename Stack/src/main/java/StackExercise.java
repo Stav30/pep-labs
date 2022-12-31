@@ -30,7 +30,8 @@ public class StackExercise {
      * @return the number of elements in the deque.
      */
     public int getSize(Deque<String> stack){
-        return 0;
+        return Deque.size();
+        //return 0;
     }
 
     /**
@@ -39,6 +40,7 @@ public class StackExercise {
      * @param item a String to be added to the deque.
      */
     public void addToTopOfStack(Deque<String> stack, String item){
+        stack.addFirst(item);
     }
 
     /**
