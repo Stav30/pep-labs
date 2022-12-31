@@ -20,7 +20,9 @@ public class StackExercise {
      * @return a newly instantiated Deque. Deques implement both stack and queue behavior.
      */
     public Deque<String> createNewStack(){
-        return null;
+        Deque<String> se = new Deque<>();
+        return se ;
+        //return null;
     }
 
     /**
