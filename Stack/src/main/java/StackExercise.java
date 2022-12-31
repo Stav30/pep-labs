@@ -30,7 +30,7 @@ public class StackExercise {
      * @return the number of elements in the deque.
      */
     public int getSize(Deque<String> stack){
-        return Deque.size();
+        return stack.size();
         //return 0;
     }
 
