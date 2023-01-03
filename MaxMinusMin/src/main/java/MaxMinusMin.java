@@ -1,4 +1,6 @@
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class MaxMinusMin {
@@ -10,7 +12,12 @@ public class MaxMinusMin {
      * @return the max value of nums minus the min value of nums.
      */
     public int difference(List<Integer> nums){
-        List<Integer> al = new ArrayList<Integer>(); 
+        //List<Integer> al = new ArrayList<Integer>(); 
+        int maxList = Collections.max(nums);
+        int minList = Collections.min(nums);
+        return (maxList - minList);
+
+        //return al.size();
         //return 0;
     }
 }
