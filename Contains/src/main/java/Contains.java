@@ -16,6 +16,11 @@ public class Contains {
          * index the array - arr
          * value check using operator == or see if some.equal method exist for arrays.
          */
-        //return false;
+        for (int i = 0 ; i < arr.length ; i++ );
+            if (arr[i] == target) {
+                return true ;
+            } else return false;
+        
+         //return false;
     }
 }
