@@ -1,3 +1,3 @@
 UPDATE site_user
-SET last_name = 'Smith'
+SET lastname = 'Rush'
 WHERE id = 2;
