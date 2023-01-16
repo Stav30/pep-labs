@@ -14,7 +14,8 @@ public class SimpleStringMethods {
      * @return the length of string s.
      */
     public int length(String s){
-        return 0;
+        //return 0;
+        return length(s);
     }
 
     /**
@@ -24,7 +25,8 @@ public class SimpleStringMethods {
      * @return the character of String s that is located at position n.
      */
     public char charAt(String s, int n){
-        return ' ';
+        
+        //return ' ';
     }
 
     /**
