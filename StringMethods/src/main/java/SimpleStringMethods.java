@@ -15,7 +15,7 @@ public class SimpleStringMethods {
      */
     public int length(String s){
         //return 0;
-        return length(s);
+        return s.length();
     }
 
     /**
@@ -27,7 +27,7 @@ public class SimpleStringMethods {
     public char charAt(String s, int n){
         
         //return ' ';
-    }
+    }                                                               
 
     /**
      * indexOf can be used to retrieve the index of the first character of a String, such as the position of character
