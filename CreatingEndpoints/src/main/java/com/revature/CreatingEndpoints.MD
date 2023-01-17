@@ -73,7 +73,7 @@ Notice the `ctx` variable. We can utilize this variable to send back data in HTT
 
 ```java
 public static void main(String[] args){
-    Javalin app = Javalin.create().start(9000);
+    Javalin app = Javalin.create();
 
     // HTTP GET REQUEST to http://localhost:9000/get-request
     app.get("/get-request", ctx -> {
