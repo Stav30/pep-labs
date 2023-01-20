@@ -20,7 +20,7 @@ public class Search2dArrayTest {
         boolean actual = sat.search(input,target);
     }
     /**
-     * The 2d array here contains 5, so search should return true. Should say 2 instead of 5.
+     * The 2d array here contains 5, so search should return true. 
      */
     @Test
     public void searchTest2(){
