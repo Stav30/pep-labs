@@ -1,6 +1,7 @@
 package com.revature;
 
 import io.javalin.Javalin;
+import io.javalin.http.Context;
 
 public class JavalinSingleton {
 
@@ -15,13 +16,18 @@ public class JavalinSingleton {
          * Note: Please refer to the "PathParameters.MD" file for more assistance if needed.
          */
         app.get("/firstname/{first}", ctx -> {
-            
+            String firstName = ctx.pathParam("first");
             //write code here
-
+            ctx.result(firstName);
         });
 
-
+      
         return app;
     }
     
 }
+/*
+app.get("/lastname/{name}", ctx -> {
+    String lastName = ctx.pathParam("name");
+});
+ */
