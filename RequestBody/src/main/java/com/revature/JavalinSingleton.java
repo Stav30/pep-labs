@@ -1,5 +1,9 @@
 package com.revature;
 
+import org.h2.engine.User;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import io.javalin.Javalin;
 
 /**
@@ -17,8 +21,14 @@ public class JavalinSingleton {
          * Note: Please refer to the "RequestBody.MD" file for more assistance if needed.
          */
         app.post("/problem1", ctx -> {
-                //implement logic here
-        });
+            //retrieve the json string from the request body
+            String jsonString = ctx.body();
+
+            //utilize jackson to convert the json string to a user object
+            ObjectMapper om = new ObjectMapper();
+            Song song = om.readValue(jsonString, Song.class);
+});     
+            
 
         /**
          * problem2: retrieve the song object from the request body...
