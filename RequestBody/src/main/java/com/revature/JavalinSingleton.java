@@ -1,7 +1,5 @@
 package com.revature;
 
-import org.h2.engine.User;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.javalin.Javalin;
@@ -26,22 +24,11 @@ public class JavalinSingleton {
 
             //utilize jackson to convert the json string to a user object
             ObjectMapper om = new ObjectMapper();
-
-            /* 
             Song song = om.readValue(jsonString, Song.class);
-
-            //we need to let the request know we will send back json in the body
-            ctx.contentType("application/json"); 
-            song.setSongName("songName");
-
-             //utilize jackson convert back the user object to a json string
-            String jsonStringToBeReturned = om.writeValueAsString(song);
-
-             //return the json string in the response body
-            ctx.result(jsonStringToBeReturned);
-
+            
+            ctx.result(song.getArtistName());
         });     
-        */    
+            
 
         /**
          * problem2: retrieve the song object from the request body...
