@@ -32,6 +32,11 @@ public class JavalinSingleton {
             ctx.contentType("application/json"); 
             song.setSongName("songName");
 
+             //utilize jackson convert back the user object to a json string
+            String jsonStringToBeReturned = om.writeValueAsString(song);
+
+             //return the json string in the response body
+            ctx.result(jsonStringToBeReturned);
 
 
 
