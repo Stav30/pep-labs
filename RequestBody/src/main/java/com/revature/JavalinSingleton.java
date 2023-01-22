@@ -27,7 +27,15 @@ public class JavalinSingleton {
             //utilize jackson to convert the json string to a user object
             ObjectMapper om = new ObjectMapper();
             Song song = om.readValue(jsonString, Song.class);
-});     
+
+            //we need to let the request know we will send back json in the body
+            ctx.contentType("application/json"); 
+            song.setSongName("songName");
+
+
+
+
+        });     
             
 
         /**
