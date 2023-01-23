@@ -155,9 +155,9 @@ public class FlightDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
-            preparedStatement.setString(1,flight.departure_city);
-            preparedStatement.setString(2,flight.arrival_city);
-            preparedStatement.setInt(3,flight.flight_id);
+            preparedStatement.setString(1, flight.departure_city);
+            preparedStatement.setString(2, flight.arrival_city);
+            preparedStatement.setInt(3, flight.flight_id);
 
             preparedStatement.executeUpdate();
         }catch(SQLException e){
@@ -187,7 +187,7 @@ public class FlightDAO {
         List<Flight> flights = new ArrayList<>();
         try {
             //Write SQL logic here
-            String sql = "change me";
+            String sql = "select * from TableName where ColumnName1 = ? and ColumnName2 = ?;";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write PreparedStatement setString and setInt methods here.
