@@ -46,7 +46,7 @@ public class FlightService {
      * ME: Use InsertFlight() from FlightDAO
      */
     public Flight addFlight(Flight flight){
-        return flightDAO.insertFlight();
+        return flightDAO.insertFlight(flight);
         //return null;
     }
 
@@ -63,7 +63,8 @@ public class FlightService {
      *         user should have some insight if they attempted to edit a nonexistent flight.)
      */
     public Flight updateFlight(int flight_id, Flight flight){
-        return null;
+        return flightDAO.updateFlight(flight);
+        //return null;
     }
 
     /**
@@ -73,7 +74,7 @@ public class FlightService {
      * @return all flights in the database.
      */
     public List<Flight> getAllFlights() {
-        return flightDao.getAllFlights();
+        return flightDAO.getAllFlights();
     }
 
     /**
