@@ -46,7 +46,7 @@ public class FlightService {
      * ME: Use InsertFlight() from FlightDAO
      */
     public Flight addFlight(Flight flight){
-        return flightDAO.InsertFlight();
+        return flightDAO.insertFlight();
         //return null;
     }
 
