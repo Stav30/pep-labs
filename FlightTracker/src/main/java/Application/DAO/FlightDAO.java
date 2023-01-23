@@ -66,7 +66,7 @@ public class FlightDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "change me";
+            String sql = "select * from TableName where ColumnName = ?";
             
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
