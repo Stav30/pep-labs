@@ -36,6 +36,7 @@ public class FlightDAO {
             String sql = "SELECT * FROM flights";
 
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()){
                 Flight flight = new Flight(rs.getInt("flight_id"), rs.getString("departure_city"),
@@ -71,7 +72,7 @@ public class FlightDAO {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setString and setInt methods here.
-            preparedStatement.setInt(1, flight.flight_id);
+            preparedStatement.setInt(1, id);
            
             
             
@@ -157,7 +158,7 @@ public class FlightDAO {
             //write PreparedStatement setString and setInt methods here.
             preparedStatement.setString(1, flight.departure_city);
             preparedStatement.setString(2, flight.arrival_city);
-            preparedStatement.setInt(3, flight.flight_id);
+            preparedStatement.setInt(3, id);
 
             preparedStatement.executeUpdate();
         }catch(SQLException e){
