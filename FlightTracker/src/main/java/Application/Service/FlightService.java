@@ -43,9 +43,11 @@ public class FlightService {
      * @param flight an object representing a Flight.
      * @return the newly added flight if the add operation was successful, including the flight_id. We do this to
      *         inform our provide the front-end client with information about the added Flight.
+     * ME: Use InsertFlight() from FlightDAO
      */
     public Flight addFlight(Flight flight){
-        return null;
+        return FlightDAO.addFlight
+        //return null;
     }
 
     /**
