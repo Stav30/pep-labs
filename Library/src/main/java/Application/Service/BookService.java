@@ -40,7 +40,8 @@ public class BookService {
      * @return all books.
      */
     public List<Book> getAllBooks() {
-        return null;
+        return bookDAO.getAllBooks();
+        //return null;
     }
     /**
      * TODO: Use the bookDAO to persist a book to the database.
