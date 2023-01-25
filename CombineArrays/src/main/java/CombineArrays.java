@@ -10,19 +10,19 @@ public class CombineArrays {
      */
     public int[] combine(int[] arr1, int[] arr2){
 
-         // determines length of firstArray
+         // length of firstArray
          int a1 = arr1.length;
         
-         // determines length of secondArray
+         // length of secondArray
          int b1 = arr2.length;
          
-         // resultant array size
+         // combined array size
          int c1 = a1 + b1;
    
-         // create the resultant array
+         // create the combined array
          int[] c = new int[c1];
    
-         // using the pre-defined function arraycopy
+         // use java built-in function arraycopy
          System.arraycopy(arr1, 0, c, 0, a1);
          System.arraycopy(arr2, 0, c, a1, b1);
         
