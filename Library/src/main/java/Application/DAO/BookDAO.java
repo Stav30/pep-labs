@@ -87,14 +87,14 @@ public class BookDAO {
         Connection connection = ConnectionUtil.getConnection();
         try {
             //Write SQL logic here
-            String sql = "INSERT INTO book (isbn, author_id, title, copies_available) values (?, ?, ?);";
+            String sql = "INSERT INTO book (isbn, author_id, title, copies_available) values (?, ?, ?, ?);";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             //write preparedStatement's setString and setInt methods here.
-            preparedStatement.setInt(1, book.isbn);
-            preparedStatement.setInt(1, book.author_id);
-            preparedStatement.setString(2, book.title );
-            preparedStatement.setInt(3, book.copies_available);
+            preparedStatement.setInt(1, book.getIsbn());
+            preparedStatement.setInt(1, book.getAuthor_id());
+            preparedStatement.setString(2, book.getTitle() );
+            preparedStatement.setInt(3, book.getCopies_available());
 
             preparedStatement.executeUpdate();
             return book;
