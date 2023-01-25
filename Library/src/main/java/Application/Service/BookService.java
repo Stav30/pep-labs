@@ -54,10 +54,11 @@ public class BookService {
     public Book addBook(Book book) {
         // if book DNE --> Add
         // not sure what method to use here
-        if(bookDAO.getBookByIsbn(isbn) == null) { bookDAO.insertBook(book);} 
+        // So where only adding books when ISBN already exists?
+        if(bookDAO.getBookByIsbn(book.getIsbn()) == null) { return bookDAO.insertBook(book);} 
         else {return null;}
                   
-        return bookDAO.insertBook(book);
+        //return bookDAO.insertBook(book);
         
     }
     /**
