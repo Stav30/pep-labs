@@ -53,6 +53,7 @@ public class BookService {
      */
     public Book addBook(Book book) {
         // if book DNE --> Add
+        // not sure what method to use here
         if(bookDAO.getBookByIsbn(isbn) == null) { bookDAO.insertBook(book);} 
         else {return null;}
                   
