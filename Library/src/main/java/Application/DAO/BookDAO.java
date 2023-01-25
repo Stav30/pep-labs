@@ -78,7 +78,7 @@ public class BookDAO {
 
     /**
      * TODO: insert an book into the Book table.
-     * Unlike some of the other insert problems, the primary key here will be provided by the client as part of the
+     * Unlike some of the other insert problems, the primary key(isbn) here will be provided by the client as part of the
      * Book object. Given the specific nature of an ISBN as both a numerical organization of books outside of this
      * database, and as a primary key, it would make sense for the client to submit an ISBN when submitting a book.
      * You only need to change the sql String and leverage PreparedStatement's setString and setInt methods.
