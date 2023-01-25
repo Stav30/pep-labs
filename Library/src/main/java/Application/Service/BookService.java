@@ -54,7 +54,7 @@ public class BookService {
     public Book addBook(Book book) {
         // if book DNE --> Add
         // not sure what method to use here
-        // So where only adding books when ISBN already exists?
+        // So where only adding books when ISBN does not exist.
         if(bookDAO.getBookByIsbn(book.getIsbn()) == null) { return bookDAO.insertBook(book);} 
         else {return null;}
                   
