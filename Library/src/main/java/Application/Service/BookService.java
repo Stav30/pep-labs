@@ -51,13 +51,13 @@ public class BookService {
      * @return book if it was successfully persisted, null if it was not successfully persisted (eg if the book primary
      * key was already in use.)
      */
-    public Book addBook(Book book) {
-        // if book exists --> do NOT add
-        if(bookDAO.insertBook(book) == null) { bookDAO.insertBook(book);} 
+    public Book addBook(int isbn, Book book) {
+        // if book DNE --> Add
+        if(bookDAO.getBookByIsbn(isbn) == null) { bookDAO.insertBook(book);} 
         else {return null;}
                   
         return bookDAO.insertBook(book);
-        //return null;
+        
     }
     /**
      * TODO: Use the bookDAO to retrieve a list of all books that have a bookCount above 0.
