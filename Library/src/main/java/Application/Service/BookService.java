@@ -52,8 +52,10 @@ public class BookService {
      * key was already in use.)
      */
     public Book addBook(Book book) {
-        if(bookDAO.insertBook(book) != null) { bookDAO.addBook(book);}
+        // if book exists --> do NOT add
+        if(bookDAO.insertBook(book) == null) { bookDAO.insertBook(book);} 
         else {return null;}
+                  
         return bookDAO.insertBook(book);
         //return null;
     }
