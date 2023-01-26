@@ -35,7 +35,7 @@ public class ArrayAbsoluteValue {
         //nums.abs();
         for (int i = 0; i < nums.length  ; i++ ) {
             System.out.println(Math.abs(nums[i]));
-            absNums[i] = Math.abs(nums[i]); // try use a wrapper class
+            absNums[i] = Math.abs(nums[i]); 
     }
     System.out.println(Arrays.toString(absNums));
     System.out.println("--------");
