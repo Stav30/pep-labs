@@ -43,6 +43,4 @@ public class ArrayAbsoluteValue {
 }
 
 // System.out.println(Arrays.toString(mfs)); //print array
-
-
 */
