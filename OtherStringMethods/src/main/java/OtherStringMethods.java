@@ -41,6 +41,9 @@ public class OtherStringMethods {
      * @return an array of Strings that represent s1 split by splitAround.
      */
     public String[] splitStringIntoMultipleStrings(String s1, String splitAround){
-        return null;
+        //String sentence = "my favorite sentence";
+        //String mfs[] = sentence.split(splitAround);
+        return s1.split(splitAround);
+        //return null;
     }
 }
