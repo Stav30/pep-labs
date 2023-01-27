@@ -60,16 +60,11 @@ public class SampleClass {
         SampleClass sc = (SampleClass) obj ;
         if( a == sc.a  && b == sc.b) { return true ;}
         //if( a.equals( sc.a ) && b.equals(sc.b)) { return true ;}
-         
+        else return false ;
 
     //    implement a custom .toString(){} method here.
 
     }    
 }
 
-/*
- *   public Complex(double re, double im) {
-        this.re = re;
-        this.im = im;
-    }
- */
+
