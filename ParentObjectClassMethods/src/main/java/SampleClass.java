@@ -58,12 +58,13 @@ public class SampleClass {
     //    implement a custom .equals(SampleClass other){} method here.
     public boolean equals(Object obj) {
         SampleClass sc = (SampleClass) obj ;
-        if( a.equals(b )) { return true ;}
+        if( a == sc.a  && b == sc.b) { return true ;}
+        //if( a.equals( sc.a ) && b.equals(sc.b)) { return true ;}
          
 
     //    implement a custom .toString(){} method here.
 
-    
+    }    
 }
 
 /*
