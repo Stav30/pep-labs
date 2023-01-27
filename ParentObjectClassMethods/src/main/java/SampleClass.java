@@ -58,6 +58,9 @@ public class SampleClass {
     //    implement a custom .equals(SampleClass other){} method here.
     public boolean equals(Object obj) {
         SampleClass sc = (SampleClass) obj ;
+        if( a.equals(b )) { return true ;}
+         
+
     //    implement a custom .toString(){} method here.
 
     
