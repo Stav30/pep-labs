@@ -61,10 +61,13 @@ public class SampleClass {
         if( a == sc.a  && b == sc.b) { return true ;}
         //if( a.equals( sc.a ) && b.equals(sc.b)) { return true ;}
         else return false ;
-
+    }
     //    implement a custom .toString(){} method here.
-
+    
+    public String toString() {
+        return getClass().getName() + a + b ;
+        
     }    
+       
 }
-
 
