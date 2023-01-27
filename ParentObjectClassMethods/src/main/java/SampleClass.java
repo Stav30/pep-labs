@@ -56,9 +56,16 @@ public class SampleClass {
     public boolean b;
 
     //    implement a custom .equals(SampleClass other){} method here.
-
-
+    public boolean equals(Object obj) {
+        SampleClass sc = (SampleClass) obj ;
     //    implement a custom .toString(){} method here.
 
     
 }
+
+/*
+ *   public Complex(double re, double im) {
+        this.re = re;
+        this.im = im;
+    }
+ */
