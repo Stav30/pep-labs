@@ -967,10 +967,10 @@
     :count_tests: 4
     :count_tests_passed: 3
     :tests:
-      charCompareTest1: 1
+      charCompareTest1: 0
       charCompareTest2: 1
       charCompareTest3: 1
-      charCompareTest4: 0
+      charCompareTest4: 1
   Isogram:
     :Week: 8
     :Order: 7
