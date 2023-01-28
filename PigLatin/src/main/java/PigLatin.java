@@ -17,6 +17,10 @@ public class PigLatin {
      * @return the pig latin form of in.
      */
     public String returnPigLatin(String in){
-        return "";
+       // The substring begins with the character at the specified index and extends to the end of this string.
+        return in.substring(1) + in.substring(0, 1) + "ay"; 
+        
+        
+        //return "";
     }
 }
