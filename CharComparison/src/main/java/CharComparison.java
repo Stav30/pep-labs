@@ -11,18 +11,19 @@ public class CharComparison {
      * @return -1 if A is less than B, 1 if A is greater than B, and 0 if the two arrays are identical.
      */
     public int compare(char[] a, char[] b){
-        for (int i = 0; i < a.length - 1; i++) {
-            for (int j = 0; j < b.length - 1; j++) {
-                if (a[i] < b[j]) {return -1 ; }
-                else if (a[i] > b[j]) {return 1; }
-                else if (a[i] == b[j]) {return 0; }      
-       
-            }
-         
-        }
-        return 0;   
-    } }  
-/* 
+        for (int i = 0; i < a.length ; i++) {
+            if (a[i] < b[i]) {return -1 ; }
+            else if (a[i] > b[i]) {return 1; }
+            else if (a[i] == b[i]) {return 0; }        
+        }    
+    return 0; 
+    }
+        
+          
+}
+
+
+    /* 
 public class CharComparison {
     public static void main(String[] args){
         char[] a = {'d', 'a', 't'};
