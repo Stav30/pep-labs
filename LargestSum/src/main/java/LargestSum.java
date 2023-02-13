@@ -13,7 +13,11 @@ public class LargestSum {
        // Me: for, for , if , else if
        // nums is going to be an ArrayList
        int maxSum = -2147483648; int firstNum = 0; int secondNum = 0;
-       
+       for(int i = 0; i < nums.size(); i++){
+        for ( int j = i+1 ; j < nums.size() ; j++ ) {
+            
+        }
+       }
        
        
        
