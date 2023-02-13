@@ -31,10 +31,7 @@ public class InsertPosition {
         }
     
         return left;
-        
-        
-        
-        
+
         //return -1;
     }
 }
