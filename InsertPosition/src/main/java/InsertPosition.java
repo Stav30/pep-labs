@@ -15,6 +15,12 @@ public class InsertPosition {
      * @return return the index that a number should be inserted into a sorted array.
      */
     public int searchInsert(int[] nums, int target) {
-        return -1;
+        // me: use binary search 
+        
+        
+        
+        
+        
+        //return -1;
     }
 }
