@@ -13,6 +13,15 @@ public class StringReverse {
      * @return the reverse of str.
      */
     public String reverse(String str){
-        return null;
+      // me: use the decrementing for loop.
+        
+        
+        
+        
+        
+        
+        
+        
+        //return null;
     }
 }
