@@ -11,7 +11,7 @@ public class LargestSum {
      */
     public int bigSum(List<Integer> nums){
        // Me: for, for , if , else if
-       
+       int maxSum = -1000000;
        
        
        
